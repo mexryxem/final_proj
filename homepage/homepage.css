@@ -1,18 +1,35 @@
-body{
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 90vh;
+    font-size: 48px;
 }
-
 input{
     border: 2px black solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    
+    margin-top: 3rem;
+    width: 30%;
+    font-size: large;
 }
 
-input::focus{
-    outline: none
+input:focus{
+    
+    outline: none !important;
+}
+select{
+    margin-right: 0;
+}
+
+button{
+    margin: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(212, 212, 244);
+    width: 10%;
+    
+
 }
