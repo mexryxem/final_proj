@@ -3,7 +3,7 @@
     <head>
         <title>Homepage</title>
         <script type="text/javascript" src="homepage.js" async defer> </script>
-
+        <script src="homepage.js" async defer></script>
         <link rel="stylesheet" href="./homepage.css">
 
     </head>
@@ -14,8 +14,9 @@
         </select>
         <main>
             <h1>SpotSeeker</h1>
-            <input placeholder="Search for a specific product or general item"></input>
-            <button>Search</button>
+            <input id="search-input" placeholder="Search for a specific product or general item"></input>
+            <button id="submit">Search</button>
+            <p id="error-message" class="hidden">Item type not found, please try again!</p>
         </main>
     </body>
 </html>

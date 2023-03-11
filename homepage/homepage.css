@@ -5,6 +5,7 @@ main{
     align-items: center;
     height: 90vh;
     font-size: 48px;
+    position: relative;
 }
 input{
     border: 2px black solid;
@@ -26,10 +27,26 @@ select{
 
 button{
     margin: 2rem;
+    margin-bottom: 0.5rem;
     border: none;
-    border-radius: 10px;
-    background-color: rgb(212, 212, 244);
-    width: 10%;
-    
-
+    border-radius: 20px;
+    background-color: rgb(139, 139, 224);
+    width: 10rem;
+    height: 2rem;
+    color: white;
+    font-size: large;
+}
+button:hover {
+    border: blue 2px solid;
+}
+#error-message.shown{
+    position: fixed;
+    bottom: 4rem;
+    font-size: large;
+    color: red;
+    display: block;
+}
+#error-message.hidden{
+    position: fixed;
+    display: none;
 }
