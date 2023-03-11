@@ -6,10 +6,10 @@ function getResultsPage(){
     //get query from url search parameters
     const urlSearchParam = new URLSearchParams(window.location.search);
     const query = urlSearchParam.get("query");
-    
+
     //get list of items from database
     let items = Search_Database(query);
-    console.log(items);
+
     //display items to page
     let displayItemsDiv = document.querySelector("#display-results");
     
@@ -17,7 +17,7 @@ function getResultsPage(){
     for(let i = 0; i < items.length; i++){
         //create a section for the item and add to the doc
         let itemRow = document.createElement("div");
-        itemRow.classList = "item"; //<----------style html using item class
+        itemRow.classList = "itemRow"; //<----------style html using item class
         displayItemsDiv.appendChild(itemRow);
 
         //create the text element and add it to the row
@@ -37,9 +37,24 @@ function getResultsPage(){
         //create arrow button and add to row
         let button = document.createElement("button");
         button.id = items[i]["name"];
+        button.classList = "itemButton"
         itemRow.appendChild(button);
     }
+
+//when button clicked go to corresponding item's map page
+
+//get list of all buttons
+let buttons = document.querySelectorAll("button.itemButton");
+
+//console.log(buttons);
+for(let i=0; i< buttons.length; i++){
+    //add event listner for each button
+    buttons[i].addEventListener("click", (event)=>{
+        //go to maps page and save the selected item's name through url search parameter
+        location.href = "../maps-page/map.html?itemName=" + buttons[i].id;
+    })
+}
 }
 
 
-//when button clicked go to corresponding item's map page
+
