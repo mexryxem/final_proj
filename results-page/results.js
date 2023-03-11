@@ -37,23 +37,23 @@ function getResultsPage(){
         //create arrow button and add to row
         let button = document.createElement("button");
         button.id = items[i]["name"];
-        button.classList = "itemButton"
+        button.classList = "itemButton";
         itemRow.appendChild(button);
     }
 
-//when button clicked go to corresponding item's map page
+    //when button clicked go to corresponding item's map page
 
-//get list of all buttons
-let buttons = document.querySelectorAll("button.itemButton");
+    //get list of all buttons
+    let buttons = document.querySelectorAll("button.itemButton");
 
-//console.log(buttons);
-for(let i=0; i< buttons.length; i++){
-    //add event listner for each button
-    buttons[i].addEventListener("click", (event)=>{
-        //go to maps page and save the selected item's name through url search parameter
-        location.href = "../maps-page/map.html?itemName=" + buttons[i].id;
-    })
-}
+    //console.log(buttons);
+    for(let i=0; i< buttons.length; i++){
+        //add event listner for each button
+        buttons[i].addEventListener("click", (event)=>{
+            //go to maps page and save the selected item's name through url search parameter
+            location.href = "../maps-page/map.html?itemName=" + buttons[i].id;
+        })
+    }
 }
 
 
