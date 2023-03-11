@@ -21,7 +21,7 @@ image: ""
 //
 //For easy searching, the types are: 
 //Shoe, Men's Shirt, Men's Pants, Women's Shirt, Women's Pants, Kid's Shirt, and Kid's Pants
-let Types = [Shoe, "Men's Shirt", "Men's Pants", "Women's Shirt", "Women's Pants", "Kid's Shirt", "Kid's Pants"];
+let Types = ["Shoe", "Men's Shirt", "Men's Pants", "Women's Shirt", "Women's Pants", "Kid's Shirt", "Kid's Pants"];
 
 let Items = [
     //Shoes
@@ -209,7 +209,7 @@ let Items = [
 function Is_type(search_type){
     //search Types looking for "search_type"
     for(let i = 0; i < Items.length; i++){
-        if(Types[i] == search_type){
+        if(Types[i] === search_type){
             //if "search_type" is found, return true
             return true;
         }
@@ -226,9 +226,11 @@ function Is_type(search_type){
 function Search_Database(search_type){
     //make an empty array
     found = [];
+    if(!Is_type(search_type)) return false;
+
     //search database looking for "search_type"
     for(let i = 0; i < Items.length; i++){
-        if(Items[i].type == search_type){
+        if(Items[i].type === search_type){
             //if the current item has type equal to 
             //"search_type" then, add it to the found list
             found.push(Items[i]);
