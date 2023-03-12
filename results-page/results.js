@@ -26,5 +26,9 @@ function getResultsPage(){
     }
 }
 
-
+let backButton = document.querySelector(".backToSearch");
+//go back to home page when button clicked
+backButton.addEventListener("click", ()=>{
+    location.href = "../homepage/homepage.html";
+});
 
