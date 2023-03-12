@@ -1,0 +1,118 @@
+body{
+    max-width: 100%;
+    background-color: white;
+    font-family:'Inria Sans';
+}
+
+.background{
+    opacity: .5;
+}
+
+.store{
+    background-color: #FF92E0;
+    width: 260px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.storeLoc{
+    font-family: 'Inria Sans';
+    font-size: 16px;
+    margin-top: 5px;
+    filter:brightness(43%);
+    color: #5E5E5E;
+}
+
+.results{
+    height: 120px;
+    width: 500px;
+    background-color: #D9D9D9;
+    opacity: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px;
+    position: fixed;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.map{
+    height: 400px;
+    width: 800px;
+    background-color: #D9D9D9;
+    opacity: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px;
+    position: fixed;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.mapBox{
+    border-style: solid;
+    height: 350px;
+    width: 700px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.backToSearch{
+    width: 130px;
+    height: 30px;
+    background-color: #B192FF;
+    opacity: 200%;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-size: 16px;
+    filter:brightness(100%);
+}
+
+.buttonText{
+    margin-left: 5px;
+    filter:brightness(43%);
+    color: #5E5E5E;
+}
+
+.result1{
+    float: left;
+    margin-left: 50px;
+    margin-top: 60px;
+    -webkit-text-stroke: 1px #92E0FF;
+    font-family: 'Inria Sans';
+    font-size: 15.98px;
+    color: #000000;
+}
+
+.loc1{
+    margin-left: 380px;
+    margin-top: 22px;
+    font-family: 'Inria Sans';
+    font-size: 15.98px;
+    color: #000000;
+    -webkit-text-stroke: 1px #FF92E0;
+}
+
+.backToResults{
+    width: 130px;
+    height: 30px;
+    background-color: #B192FF;
+    opacity: 200%;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-size: 16px;
+    filter:brightness(100%);
+    margin-top: 8px;
+    margin-left: -85px;
+}
+
+/*.image{
+    margin-left: 230px;
+    margin-top: -20px;
+}*/
