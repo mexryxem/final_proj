@@ -1,0 +1,78 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel="stylesheet">
+
+   <script type="text/javascript" src="./map.js" async defer> </script>
+   <script type="text/javascript" src="../results-page/results.js" async defer> </script>
+   <script src="../Database.js" async defer></script>
+
+   <link rel="stylesheet" href="map.css">
+   <title>Map</title>
+ </head>
+
+ <body>
+
+
+    <div class="background">
+        <div class="topCircles">
+            <img src="topleft.png" style="height:200px; position:absolute; left:5px; top:5px;">
+        </div>
+
+       <div class="bottomCircles">
+            <img src="bottomright.png" style="height:200px; position:absolute; right:5px; bottom: 5px;">
+        </div>
+
+        <div class="store">
+          <div class="storeLoc">&nbsp Your Store: JCPenny Valley Fair Mall</div>  
+      </div>
+    </div>
+
+    <button class="backToSearch">
+      <div class="buttonText">
+          Back to Search
+      </div>
+    </button>
+
+
+    <div class="map">
+      <div class="mapBox">
+
+        <div class="waypointA">
+          <div class="gg-pinA"></div>
+        </div>
+
+        <div class="waypointB">
+          <div class="gg-pinB"></div>
+        </div>
+
+        <div class="waypointC">
+          <div class="gg-pinC"></div>
+        </div>
+
+        <div class="waypointD">
+          <div class="gg-pinD"></div>
+        </div>
+
+        <div class="waypointE">
+          <div class="gg-pinE"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="results">
+      <form>
+        <input type="button" value="Back to Results" onclick="history.back()">
+      </form>
+
+
+    </div>
+
+ </body>
+
+ </html>

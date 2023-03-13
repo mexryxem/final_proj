@@ -160,3 +160,158 @@ body{
     color: #000000;
     -webkit-text-stroke: 1px #FF92E0;
 }
+
+.waypointA{
+    height: 10px;
+    width: 10px;
+    border: black solid 0px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+
+.gg-pinA {
+    box-sizing: border-box;
+    background-color: pink;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid;
+    margin-top: -4px
+  }
+  .gg-pinA::before {
+    transform: rotate(-45deg);
+    content: "A";
+    bottom: 0px;
+    left: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+.waypointB{
+    height: 10px;
+    width: 10px;
+    border: black solid 0px;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+
+.gg-pinB {
+    box-sizing: border-box;
+    background-color: pink;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid;
+    margin-top: -4px
+  }
+  .gg-pinB::before {
+    transform: rotate(-45deg);
+    content: "B";
+    bottom: 0px;
+    left: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+.waypointC{
+    height: 10px;
+    width: 10px;
+    border: black solid 0px;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+
+.gg-pinC {
+    box-sizing: border-box;
+    background-color: pink;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid;
+    margin-top: -4px
+  }
+  .gg-pinC::before {
+    transform: rotate(-45deg);
+    content: "C";
+    bottom: -1px;
+    left: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+.waypointD{
+    height: 10px;
+    width: 10px;
+    border: black solid 0px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+.gg-pinD {
+    box-sizing: border-box;
+    background-color: pink;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid;
+    margin-top: -4px
+  }
+  .gg-pinD::before {
+    transform: rotate(-45deg);
+    content: "D";
+    bottom: 0px;
+    left: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+.waypointE{
+    height: 10px;
+    width: 10px;
+    border: black solid 0px;
+    margin-top: 5%;
+    margin-left: 55%;
+}
+
+
+.gg-pinE {
+    box-sizing: border-box;
+    background-color: pink;
+    position: relative;
+    display: block;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border-radius: 100% 100% 0 100%;
+    border: 2px solid;
+    margin-top: -4px
+  }
+  .gg-pinE::before {
+    transform: rotate(-45deg);
+    content: "E";
+    bottom: -1px;
+    left: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  }

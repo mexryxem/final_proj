@@ -28,42 +28,42 @@ let Items = [
     {
         name: "Red Nike Shoe",
         type: "Shoe",
-        location: (1, 1),
+        location: [1, 1],
         description: "It is a red shoe",
         image: "https://n4.sdlcdn.com/imgs/a/6/l/Nike-Red-Basketball-Sports-Shoes-SDL413059472-1-32cc8.jpg"
     },
     {
         name: "Blue Nike Shoe",
         type: "Shoe",
-        location: (1, 2),
+        location: [1, 2],
         description: "It is a blue shoe",
         image: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fn1.sdlcdn.com%2Fimgs%2Fb%2Fm%2F4%2FNike-Blue-Running-Shoes-SDL685685373-1-fe96c.jpg&f=1&nofb=1&ipt=19df762439f46020e6d2a1c669d410738af69d46606b7cc7bd220d1c211c2049&ipo=images"
     },
     {
         name: "Yellow Nike Shoe",
         type: "Shoe",
-        location: (1, 3),
+        location: [1, 3],
         description: "It is a yellow shoe",
         image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdna.lystit.com%2Fphotos%2Fstockx%2F6e0bb617%2Fnike-Varsity-MaizeVarsity-Maize-Ligh-Air-Max-90-Vt-Varsity-Maize.jpeg&f=1&nofb=1&ipt=85053b2830720f886f5ee74431f87993cdba2f12ba28cb32ae58052daa39f568&ipo=images"
     },
     {
         name: "Black Adidas Shoe",
         type: "Shoe",
-        location: (1, 4),
+        location: [1, 4],
         description: "A black shoe",
         image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fn2.sdlcdn.com%2Fimgs%2Fh%2Fw%2F0%2FAdidas-Lifestyle-Black-Casual-Shoes-SDL865005169-3-c77f6.jpg&f=1&nofb=1&ipt=1c738b26bf9aa7cda3f33a6ef9ce4dc3ca06ce37ec0593b30ea94514ef75a876&ipo=images"
     },
     {
         name: "Purple Adidas Shoe",
         type: "Shoe",
-        location: (1, 5),
+        location: [1, 5],
         description: "A purple shoe",
         image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fn4.sdlcdn.com%2Fimgs%2Fg%2F3%2Fg%2FAdidas-Purple-Running-Shoes-SDL863384732-1-2c1e8.jpeg&f=1&nofb=1&ipt=c2286990b1b5e5dde0dba7b2b4f088cde4f288cf8762a016a2445d72dac2ffd0&ipo=images"
     },
     {
         name: "White Vans Shoe",
         type: "Shoe",
-        location: (1, 6),
+        location: [1, 6],
         description: "A white shoe",
         image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.surfstitch.com%2Fon%2Fdemandware.static%2F-%2FSites-ss-master-catalog%2Fdefault%2Fdw5e566ac0%2Fimages%2FSSVN-0EE3W00M%2FTRUE-WHITE-MENS-FOOTWEAR-VANS-SKATE-SHOES-SSVN-0EE3W00M_5.JPG&f=1&nofb=1&ipt=b63a61676bb26695d18a914db40bbb07efc60bbbe0561fd64ba85665fcfac477&ipo=images"
     },
@@ -238,4 +238,13 @@ function Search_Database(search_type){
     } 
     //return the found items
     return found;
+}
+
+function searchItem(item){
+    for(let i = 0; i < Items.length; i++){
+        if(item === Items[i].name){
+            return Items[i];
+        }
+    }
+    console.log("item not found");
 }
