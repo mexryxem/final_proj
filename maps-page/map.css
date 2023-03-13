@@ -37,6 +37,9 @@ body{
   font-size: 16px;
   filter:brightness(100%);
 }
+.backToSearch:hover{
+  border: black solid 1px;
+}
 
 .buttonText{
   margin-left: 5px;
@@ -250,6 +253,7 @@ input[type=button]{
     filter:brightness(100%);
   
 }
+
 
 .item{
   display: flex;
