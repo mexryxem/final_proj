@@ -73,6 +73,9 @@ body{
     font-size: 16px;
     filter:brightness(100%);
 }
+.backToSearch:hover{
+    border: black solid 1px;
+}
 
 .buttonText{
     margin-left: 5px;
@@ -94,6 +97,9 @@ body{
     border-color: #000000;
     background-color: #D9D9D9;
 }
+.result1:hover{
+    border: black solid 1px;
+}
 .result2{
     width: 800px;
     height: 50px;
@@ -103,6 +109,9 @@ body{
     border-left-style: none;
     border-color: #000000;
     background-color: #D9D9D9;
+}
+.result2:hover{
+    border: black solid 1px;
 }
 .result3{
     width: 800px;
@@ -114,6 +123,9 @@ body{
     border-color: #000000;
     background-color: #D9D9D9;
 }
+.result3:hover{
+    border: black solid 1px;
+}
 .result4{
     width: 800px;
     height: 50px;
@@ -123,6 +135,9 @@ body{
     border-left-style: none;
     border-color: #000000;
     background-color: #D9D9D9;
+}
+.result4:hover{
+    border: black solid 1px;
 }
 .result5{
     width: 800px;
@@ -136,6 +151,9 @@ body{
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-bottom: 1px;
+}
+.result5:hover{
+    border: black solid 1px;
 }
 
 #arrow{
