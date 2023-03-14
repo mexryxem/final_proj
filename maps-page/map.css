@@ -62,7 +62,7 @@ body{
   margin: 0 auto;
 }
 
-.mapBox{
+.mapBox2{
   border-style: solid;
   height: 90%;
   width: 95%;
@@ -84,6 +84,7 @@ body{
   bottom: 50px;
   transform: translate(-50%, 10%);
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .waypointA{
@@ -254,6 +255,9 @@ input[type=button]{
   
 }
 
+.item p{
+  color: blue;
+}
 
 .item{
   display: flex;
@@ -265,5 +269,14 @@ input[type=button]{
 .itemImg{
   width: 15%;
   object-fit: contain;
-  margin: auto;
+  /* margin: auto; */
+  margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  bottom: -5px;
+}
+
+.mapBox2 img{
+  width: 77%;
+  margin-left: 10%;
 }
