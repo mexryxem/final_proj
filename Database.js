@@ -275,7 +275,7 @@ let Items = [
         location: (7,3),
         description: "A pair of white pants for kids",
         image: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fep.yimg.com%2Fay%2Fyhst-11683221621812%2Fboys-white-pants-4.jpg&f=1&nofb=1&ipt=98cfdce3a6160044ee5f91305709edcd1694f5556980e3a32eae69aee8a3ca11&ipo=images"
-    }
+    },
     {
         name: "Kid's Blue Pants",
         type: "Kid's Pants",
