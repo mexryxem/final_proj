@@ -43,6 +43,9 @@ select{
     align-self: flex-end;
     justify-items: flex-start;
     border: none;
+    
+    font-size:large ;
+
 }
 
 select:hover{
