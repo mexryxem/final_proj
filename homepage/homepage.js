@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click", (event) => {
+submit = () =>{
     //get query
     let query = document.querySelector("#search-input").value;
     console.log("query: ", query);
@@ -14,6 +14,15 @@ document.querySelector("button").addEventListener("click", (event) => {
         //go to results page with query as search param
         location.href="../results-page/results.html?query="+query;
 
-    }    
+    }
+}
+
+document.querySelector("button").addEventListener("click", (event) => {   
+    submit();
 });
 
+document.querySelector("input").addEventListener("keypress", (event)=>{
+    if (event.key === "Enter") {
+        submit();
+    }
+});
